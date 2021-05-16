@@ -14,7 +14,9 @@
 - Se puede realizar el usuario y contraseña usando la clase SettingsManager modificando los atributos user, password
 
 ![Simulator Screen Shot - iPhone 8 - 2021-05-16 at 10 50 31](https://user-images.githubusercontent.com/23081637/118403576-a48a1700-b634-11eb-98af-353542e7bbc5.png)
+
 ![Simulator Screen Shot - iPhone 8 - 2021-05-16 at 10 50 36](https://user-images.githubusercontent.com/23081637/118403580-a7850780-b634-11eb-8fc4-29344a6b3d58.png)
+
 ![Simulator Screen Shot - iPhone 8 - 2021-05-16 at 10 50 39](https://user-images.githubusercontent.com/23081637/118403584-aa7ff800-b634-11eb-9913-f2639101ff44.png)
 
 
