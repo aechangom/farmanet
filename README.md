@@ -1,7 +1,7 @@
 # farmanet
 - La aplicación contiene un de login simple contra el keychain 
 - Cifra la información de usando Cryptokit
-- Realiza el consumo del servicio al la url https://farmanet.minsal.cl/index.php/ws/getLocales usnado Alamofire
+- Realiza el consumo del servicio al la url https://farmanet.minsal.cl/index.php/ws/getLocales usando Alamofire
 - Se valida login inválido
 - Muestra los atributos "local_nombre",  "local_direccion" y "localidad_nombre" 
 - En la pantalla detalle muestra  el objeto JSON completo. 
