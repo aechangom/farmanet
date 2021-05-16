@@ -6,6 +6,7 @@
 - Muestra los atributos "local_nombre",  "local_direccion" y "localidad_nombre" 
 - En la pantalla detalle muestra  el objeto JSON completo. 
 -  Se uasa el patron MVVM
+-  Target minimo iOS13
 
 -Para ingresear  
  Usuario = admin
