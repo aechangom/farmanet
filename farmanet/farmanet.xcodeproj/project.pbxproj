@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032E328926504E2100AD5F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E328826504E2100AD5F7D /* AppDelegate.swift */; };
+		032E328B26504E2100AD5F7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E328A26504E2100AD5F7D /* SceneDelegate.swift */; };
+		032E329226504E2F00AD5F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032E329126504E2F00AD5F7D /* Assets.xcassets */; };
+		032E329526504E2F00AD5F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032E329326504E2F00AD5F7D /* LaunchScreen.storyboard */; };
+		032E32A026504E2F00AD5F7D /* farmanetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E329F26504E2F00AD5F7D /* farmanetTests.swift */; };
+		032E32AB26504E2F00AD5F7D /* farmanetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E32AA26504E2F00AD5F7D /* farmanetUITests.swift */; };
+		032E32CC26504EC400AD5F7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E32CA26504EC400AD5F7D /* LoginViewController.swift */; };
+		032E32CD26504EC400AD5F7D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032E32CB26504EC400AD5F7D /* LoginViewController.xib */; };
+		032E32D326504EF000AD5F7D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E32D226504EF000AD5F7D /* LoginViewModel.swift */; };
+		032E330626505D2400AD5F7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E330526505D2400AD5F7D /* User.swift */; };
+		032E330C26505DA800AD5F7D /* Pharmacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E330B26505DA800AD5F7D /* Pharmacy.swift */; };
+		032E331426505DBD00AD5F7D /* PharmacyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E331326505DBD00AD5F7D /* PharmacyViewModel.swift */; };
+		032E331A26505DD600AD5F7D /* PharmacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E331826505DD600AD5F7D /* PharmacyViewController.swift */; };
+		032E331B26505DD600AD5F7D /* PharmacyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032E331926505DD600AD5F7D /* PharmacyViewController.xib */; };
+		032E332B26505E3F00AD5F7D /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E332926505E3F00AD5F7D /* PharmacyTableViewCell.swift */; };
+		032E332C26505E3F00AD5F7D /* PharmacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032E332A26505E3F00AD5F7D /* PharmacyTableViewCell.xib */; };
+		032E333126505E7F00AD5F7D /* PharmacyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E333026505E7F00AD5F7D /* PharmacyCellViewModel.swift */; };
+		032E333826505EBD00AD5F7D /* PharmacyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E333726505EBD00AD5F7D /* PharmacyDetailViewModel.swift */; };
+		032E334126505EE000AD5F7D /* PharmacyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E333F26505EE000AD5F7D /* PharmacyDetailViewController.swift */; };
+		032E334226505EE000AD5F7D /* PharmacyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032E334026505EE000AD5F7D /* PharmacyDetailViewController.xib */; };
+		032E334726505F6300AD5F7D /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E334626505F6300AD5F7D /* LoginManager.swift */; };
+		032E334E26505F6D00AD5F7D /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E334B26505F6C00AD5F7D /* KeyChainManager.swift */; };
+		032E334F26505F6D00AD5F7D /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E334C26505F6D00AD5F7D /* SettingsManager.swift */; };
+		032E335026505F6D00AD5F7D /* CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E334D26505F6D00AD5F7D /* CryptoManager.swift */; };
+		032E335E2650616400AD5F7D /* MessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E335D2650616400AD5F7D /* MessageText.swift */; };
+		032E33672650690300AD5F7D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33662650690300AD5F7D /* ServiceManager.swift */; };
+		032E336C2650690900AD5F7D /* HTTPClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E336B2650690900AD5F7D /* HTTPClientProtocol.swift */; };
+		032E33952650A26300AD5F7D /* localResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 032E33942650A26300AD5F7D /* localResponse.json */; };
+		032E33A12650A28E00AD5F7D /* MockHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33A02650A28E00AD5F7D /* MockHTTPClient.swift */; };
+		032E33A92650A33700AD5F7D /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33A82650A33700AD5F7D /* LoginViewModelTest.swift */; };
+		032E33AE2650A5AF00AD5F7D /* PharmacyViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33AD2650A5AF00AD5F7D /* PharmacyViewModelTest.swift */; };
+		032E33B32650AAB400AD5F7D /* PharmacyDetailViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33B22650AAB400AD5F7D /* PharmacyDetailViewModelTest.swift */; };
+		032E33B82650ABB700AD5F7D /* PharmacyCellVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33B72650ABB700AD5F7D /* PharmacyCellVMTest.swift */; };
+		032E33C52650B05600AD5F7D /* ServiceManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33C42650B05600AD5F7D /* ServiceManagerTest.swift */; };
+		032E33CA2650B2E700AD5F7D /* LoginManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33C92650B2E700AD5F7D /* LoginManagerTest.swift */; };
+		032E33CF2650B4BE00AD5F7D /* CryptoManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032E33CE2650B4BE00AD5F7D /* CryptoManagerTest.swift */; };
+		03E2CAF1265143290048D8ED /* LoginVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2CAF0265143290048D8ED /* LoginVCTest.swift */; };
+		03E2CAF626514CE20048D8ED /* PharmacyVCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2CAF526514CE20048D8ED /* PharmacyVCTest.swift */; };
+		4B6A37E8D755DF8A2AC64D61 /* Pods_farmanet_farmanetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F003499EEC796C17097518 /* Pods_farmanet_farmanetUITests.framework */; };
+		7D099A0F681054E121214846 /* Pods_farmanetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B60422AA2BF47EC269FAF89B /* Pods_farmanetTests.framework */; };
+		A50CAB836E30C7FF9DCF75CF /* Pods_farmanet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6780B874CC8B79877BE16E9 /* Pods_farmanet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032E329C26504E2F00AD5F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032E327D26504E2100AD5F7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032E328426504E2100AD5F7D;
+			remoteInfo = farmanet;
+		};
+		032E32A726504E2F00AD5F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032E327D26504E2100AD5F7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032E328426504E2100AD5F7D;
+			remoteInfo = farmanet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032E328526504E2100AD5F7D /* farmanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farmanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032E328826504E2100AD5F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		032E328A26504E2100AD5F7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		032E329126504E2F00AD5F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032E329426504E2F00AD5F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		032E329626504E2F00AD5F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032E329B26504E2F00AD5F7D /* farmanetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = farmanetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032E329F26504E2F00AD5F7D /* farmanetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = farmanetTests.swift; sourceTree = "<group>"; };
+		032E32A126504E2F00AD5F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032E32A626504E2F00AD5F7D /* farmanetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = farmanetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032E32AA26504E2F00AD5F7D /* farmanetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = farmanetUITests.swift; sourceTree = "<group>"; };
+		032E32AC26504E2F00AD5F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032E32CA26504EC400AD5F7D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		032E32CB26504EC400AD5F7D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		032E32D226504EF000AD5F7D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		032E330526505D2400AD5F7D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		032E330B26505DA800AD5F7D /* Pharmacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pharmacy.swift; sourceTree = "<group>"; };
+		032E331326505DBD00AD5F7D /* PharmacyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewModel.swift; sourceTree = "<group>"; };
+		032E331826505DD600AD5F7D /* PharmacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewController.swift; sourceTree = "<group>"; };
+		032E331926505DD600AD5F7D /* PharmacyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyViewController.xib; sourceTree = "<group>"; };
+		032E332926505E3F00AD5F7D /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
+		032E332A26505E3F00AD5F7D /* PharmacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyTableViewCell.xib; sourceTree = "<group>"; };
+		032E333026505E7F00AD5F7D /* PharmacyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCellViewModel.swift; sourceTree = "<group>"; };
+		032E333726505EBD00AD5F7D /* PharmacyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailViewModel.swift; sourceTree = "<group>"; };
+		032E333F26505EE000AD5F7D /* PharmacyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailViewController.swift; sourceTree = "<group>"; };
+		032E334026505EE000AD5F7D /* PharmacyDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailViewController.xib; sourceTree = "<group>"; };
+		032E334626505F6300AD5F7D /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		032E334B26505F6C00AD5F7D /* KeyChainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
+		032E334C26505F6D00AD5F7D /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		032E334D26505F6D00AD5F7D /* CryptoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoManager.swift; sourceTree = "<group>"; };
+		032E335D2650616400AD5F7D /* MessageText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageText.swift; sourceTree = "<group>"; };
+		032E33662650690300AD5F7D /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		032E336B2650690900AD5F7D /* HTTPClientProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientProtocol.swift; sourceTree = "<group>"; };
+		032E33942650A26300AD5F7D /* localResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localResponse.json; sourceTree = "<group>"; };
+		032E33A02650A28E00AD5F7D /* MockHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHTTPClient.swift; sourceTree = "<group>"; };
+		032E33A82650A33700AD5F7D /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
+		032E33AD2650A5AF00AD5F7D /* PharmacyViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewModelTest.swift; sourceTree = "<group>"; };
+		032E33B22650AAB400AD5F7D /* PharmacyDetailViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailViewModelTest.swift; sourceTree = "<group>"; };
+		032E33B72650ABB700AD5F7D /* PharmacyCellVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyCellVMTest.swift; sourceTree = "<group>"; };
+		032E33C42650B05600AD5F7D /* ServiceManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManagerTest.swift; sourceTree = "<group>"; };
+		032E33C92650B2E700AD5F7D /* LoginManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManagerTest.swift; sourceTree = "<group>"; };
+		032E33CE2650B4BE00AD5F7D /* CryptoManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoManagerTest.swift; sourceTree = "<group>"; };
+		03E2CAF0265143290048D8ED /* LoginVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCTest.swift; sourceTree = "<group>"; };
+		03E2CAF526514CE20048D8ED /* PharmacyVCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyVCTest.swift; sourceTree = "<group>"; };
+		03F22CC7F7530F2011FDAE12 /* Pods-farmanetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanetTests.debug.xcconfig"; path = "Target Support Files/Pods-farmanetTests/Pods-farmanetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		48A889FECF8AB4707A0E53A8 /* Pods-farmanet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanet.release.xcconfig"; path = "Target Support Files/Pods-farmanet/Pods-farmanet.release.xcconfig"; sourceTree = "<group>"; };
+		740FEF8E2D1198A7E460F802 /* Pods-farmanetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanetTests.release.xcconfig"; path = "Target Support Files/Pods-farmanetTests/Pods-farmanetTests.release.xcconfig"; sourceTree = "<group>"; };
+		86540B7E4EB862BCBB7FE5AB /* Pods-farmanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanet.debug.xcconfig"; path = "Target Support Files/Pods-farmanet/Pods-farmanet.debug.xcconfig"; sourceTree = "<group>"; };
+		B60422AA2BF47EC269FAF89B /* Pods_farmanetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farmanetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6780B874CC8B79877BE16E9 /* Pods_farmanet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farmanet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6F003499EEC796C17097518 /* Pods_farmanet_farmanetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farmanet_farmanetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E24296DA7085004DF81383FA /* Pods-farmanet-farmanetUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanet-farmanetUITests.release.xcconfig"; path = "Target Support Files/Pods-farmanet-farmanetUITests/Pods-farmanet-farmanetUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC03A52F45711A5807A33805 /* Pods-farmanet-farmanetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farmanet-farmanetUITests.debug.xcconfig"; path = "Target Support Files/Pods-farmanet-farmanetUITests/Pods-farmanet-farmanetUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032E328226504E2100AD5F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50CAB836E30C7FF9DCF75CF /* Pods_farmanet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E329826504E2F00AD5F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D099A0F681054E121214846 /* Pods_farmanetTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E32A326504E2F00AD5F7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A37E8D755DF8A2AC64D61 /* Pods_farmanet_farmanetUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032E327C26504E2100AD5F7D = {
+			isa = PBXGroup;
+			children = (
+				032E328726504E2100AD5F7D /* farmanet */,
+				032E329E26504E2F00AD5F7D /* farmanetTests */,
+				032E32A926504E2F00AD5F7D /* farmanetUITests */,
+				032E328626504E2100AD5F7D /* Products */,
+				367378E77DA8826F8863EA1B /* Pods */,
+				37EE4F3936EE53E4E1164891 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		032E328626504E2100AD5F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032E328526504E2100AD5F7D /* farmanet.app */,
+				032E329B26504E2F00AD5F7D /* farmanetTests.xctest */,
+				032E32A626504E2F00AD5F7D /* farmanetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032E328726504E2100AD5F7D /* farmanet */ = {
+			isa = PBXGroup;
+			children = (
+				032E3365265068F900AD5F7D /* Services */,
+				032E335C2650614D00AD5F7D /* Message */,
+				032E333526505E9400AD5F7D /* PharmacyDetail */,
+				032E332026505DF300AD5F7D /* PharmacyCell */,
+				032E330A26505D5C00AD5F7D /* PharmacyTable */,
+				032E32E02650501400AD5F7D /* Managers */,
+				032E32D126504ECA00AD5F7D /* Login */,
+				032E328826504E2100AD5F7D /* AppDelegate.swift */,
+				032E328A26504E2100AD5F7D /* SceneDelegate.swift */,
+				032E329126504E2F00AD5F7D /* Assets.xcassets */,
+				032E329326504E2F00AD5F7D /* LaunchScreen.storyboard */,
+				032E329626504E2F00AD5F7D /* Info.plist */,
+			);
+			path = farmanet;
+			sourceTree = "<group>";
+		};
+		032E329E26504E2F00AD5F7D /* farmanetTests */ = {
+			isa = PBXGroup;
+			children = (
+				032E339F2650A28000AD5F7D /* Mocks */,
+				032E33932650A24D00AD5F7D /* JsonResponses */,
+				032E329F26504E2F00AD5F7D /* farmanetTests.swift */,
+				032E32A126504E2F00AD5F7D /* Info.plist */,
+				032E33A82650A33700AD5F7D /* LoginViewModelTest.swift */,
+				032E33AD2650A5AF00AD5F7D /* PharmacyViewModelTest.swift */,
+				032E33B22650AAB400AD5F7D /* PharmacyDetailViewModelTest.swift */,
+				032E33B72650ABB700AD5F7D /* PharmacyCellVMTest.swift */,
+				032E33C42650B05600AD5F7D /* ServiceManagerTest.swift */,
+				032E33C92650B2E700AD5F7D /* LoginManagerTest.swift */,
+				032E33CE2650B4BE00AD5F7D /* CryptoManagerTest.swift */,
+				03E2CAF0265143290048D8ED /* LoginVCTest.swift */,
+				03E2CAF526514CE20048D8ED /* PharmacyVCTest.swift */,
+			);
+			path = farmanetTests;
+			sourceTree = "<group>";
+		};
+		032E32A926504E2F00AD5F7D /* farmanetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				032E32AA26504E2F00AD5F7D /* farmanetUITests.swift */,
+				032E32AC26504E2F00AD5F7D /* Info.plist */,
+			);
+			path = farmanetUITests;
+			sourceTree = "<group>";
+		};
+		032E32D126504ECA00AD5F7D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				032E32CB26504EC400AD5F7D /* LoginViewController.xib */,
+				032E32CA26504EC400AD5F7D /* LoginViewController.swift */,
+				032E32D226504EF000AD5F7D /* LoginViewModel.swift */,
+				032E330526505D2400AD5F7D /* User.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		032E32E02650501400AD5F7D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				032E334D26505F6D00AD5F7D /* CryptoManager.swift */,
+				032E334B26505F6C00AD5F7D /* KeyChainManager.swift */,
+				032E334C26505F6D00AD5F7D /* SettingsManager.swift */,
+				032E334626505F6300AD5F7D /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		032E330A26505D5C00AD5F7D /* PharmacyTable */ = {
+			isa = PBXGroup;
+			children = (
+				032E330B26505DA800AD5F7D /* Pharmacy.swift */,
+				032E331326505DBD00AD5F7D /* PharmacyViewModel.swift */,
+				032E331826505DD600AD5F7D /* PharmacyViewController.swift */,
+				032E331926505DD600AD5F7D /* PharmacyViewController.xib */,
+			);
+			path = PharmacyTable;
+			sourceTree = "<group>";
+		};
+		032E332026505DF300AD5F7D /* PharmacyCell */ = {
+			isa = PBXGroup;
+			children = (
+				032E332926505E3F00AD5F7D /* PharmacyTableViewCell.swift */,
+				032E332A26505E3F00AD5F7D /* PharmacyTableViewCell.xib */,
+				032E333026505E7F00AD5F7D /* PharmacyCellViewModel.swift */,
+			);
+			path = PharmacyCell;
+			sourceTree = "<group>";
+		};
+		032E333526505E9400AD5F7D /* PharmacyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				032E333726505EBD00AD5F7D /* PharmacyDetailViewModel.swift */,
+				032E333F26505EE000AD5F7D /* PharmacyDetailViewController.swift */,
+				032E334026505EE000AD5F7D /* PharmacyDetailViewController.xib */,
+			);
+			path = PharmacyDetail;
+			sourceTree = "<group>";
+		};
+		032E335C2650614D00AD5F7D /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				032E335D2650616400AD5F7D /* MessageText.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		032E3365265068F900AD5F7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				032E33662650690300AD5F7D /* ServiceManager.swift */,
+				032E336B2650690900AD5F7D /* HTTPClientProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		032E33932650A24D00AD5F7D /* JsonResponses */ = {
+			isa = PBXGroup;
+			children = (
+				032E33942650A26300AD5F7D /* localResponse.json */,
+			);
+			path = JsonResponses;
+			sourceTree = "<group>";
+		};
+		032E339F2650A28000AD5F7D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				032E33A02650A28E00AD5F7D /* MockHTTPClient.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		367378E77DA8826F8863EA1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86540B7E4EB862BCBB7FE5AB /* Pods-farmanet.debug.xcconfig */,
+				48A889FECF8AB4707A0E53A8 /* Pods-farmanet.release.xcconfig */,
+				FC03A52F45711A5807A33805 /* Pods-farmanet-farmanetUITests.debug.xcconfig */,
+				E24296DA7085004DF81383FA /* Pods-farmanet-farmanetUITests.release.xcconfig */,
+				03F22CC7F7530F2011FDAE12 /* Pods-farmanetTests.debug.xcconfig */,
+				740FEF8E2D1198A7E460F802 /* Pods-farmanetTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		37EE4F3936EE53E4E1164891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6780B874CC8B79877BE16E9 /* Pods_farmanet.framework */,
+				D6F003499EEC796C17097518 /* Pods_farmanet_farmanetUITests.framework */,
+				B60422AA2BF47EC269FAF89B /* Pods_farmanetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032E328426504E2100AD5F7D /* farmanet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032E32AF26504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanet" */;
+			buildPhases = (
+				45271D139CA8CBD2860AD193 /* [CP] Check Pods Manifest.lock */,
+				032E328126504E2100AD5F7D /* Sources */,
+				032E328226504E2100AD5F7D /* Frameworks */,
+				032E328326504E2100AD5F7D /* Resources */,
+				032E32FE2650518100AD5F7D /* ShellScript */,
+				CB864350BDD94BF994F46E89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = farmanet;
+			productName = farmanet;
+			productReference = 032E328526504E2100AD5F7D /* farmanet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		032E329A26504E2F00AD5F7D /* farmanetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032E32B226504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanetTests" */;
+			buildPhases = (
+				43D56EDFEA659716854524FD /* [CP] Check Pods Manifest.lock */,
+				032E329726504E2F00AD5F7D /* Sources */,
+				032E329826504E2F00AD5F7D /* Frameworks */,
+				032E329926504E2F00AD5F7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032E329D26504E2F00AD5F7D /* PBXTargetDependency */,
+			);
+			name = farmanetTests;
+			productName = farmanetTests;
+			productReference = 032E329B26504E2F00AD5F7D /* farmanetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		032E32A526504E2F00AD5F7D /* farmanetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032E32B526504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanetUITests" */;
+			buildPhases = (
+				4106DD73BE2DA6E252F6DAD7 /* [CP] Check Pods Manifest.lock */,
+				032E32A226504E2F00AD5F7D /* Sources */,
+				032E32A326504E2F00AD5F7D /* Frameworks */,
+				032E32A426504E2F00AD5F7D /* Resources */,
+				4121B4D356F3FB1E8E114585 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032E32A826504E2F00AD5F7D /* PBXTargetDependency */,
+			);
+			name = farmanetUITests;
+			productName = farmanetUITests;
+			productReference = 032E32A626504E2F00AD5F7D /* farmanetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032E327D26504E2100AD5F7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					032E328426504E2100AD5F7D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					032E329A26504E2F00AD5F7D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 032E328426504E2100AD5F7D;
+					};
+					032E32A526504E2F00AD5F7D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 032E328426504E2100AD5F7D;
+					};
+				};
+			};
+			buildConfigurationList = 032E328026504E2100AD5F7D /* Build configuration list for PBXProject "farmanet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032E327C26504E2100AD5F7D;
+			productRefGroup = 032E328626504E2100AD5F7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032E328426504E2100AD5F7D /* farmanet */,
+				032E329A26504E2F00AD5F7D /* farmanetTests */,
+				032E32A526504E2F00AD5F7D /* farmanetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032E328326504E2100AD5F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E334226505EE000AD5F7D /* PharmacyDetailViewController.xib in Resources */,
+				032E329526504E2F00AD5F7D /* LaunchScreen.storyboard in Resources */,
+				032E332C26505E3F00AD5F7D /* PharmacyTableViewCell.xib in Resources */,
+				032E329226504E2F00AD5F7D /* Assets.xcassets in Resources */,
+				032E32CD26504EC400AD5F7D /* LoginViewController.xib in Resources */,
+				032E331B26505DD600AD5F7D /* PharmacyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E329926504E2F00AD5F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E33952650A26300AD5F7D /* localResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E32A426504E2F00AD5F7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		032E32FE2650518100AD5F7D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		4106DD73BE2DA6E252F6DAD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-farmanet-farmanetUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4121B4D356F3FB1E8E114585 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farmanet-farmanetUITests/Pods-farmanet-farmanetUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farmanet-farmanetUITests/Pods-farmanet-farmanetUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-farmanet-farmanetUITests/Pods-farmanet-farmanetUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D56EDFEA659716854524FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-farmanetTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45271D139CA8CBD2860AD193 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-farmanet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB864350BDD94BF994F46E89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farmanet/Pods-farmanet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-farmanet/Pods-farmanet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-farmanet/Pods-farmanet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032E328126504E2100AD5F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E336C2650690900AD5F7D /* HTTPClientProtocol.swift in Sources */,
+				032E330C26505DA800AD5F7D /* Pharmacy.swift in Sources */,
+				032E32D326504EF000AD5F7D /* LoginViewModel.swift in Sources */,
+				032E32CC26504EC400AD5F7D /* LoginViewController.swift in Sources */,
+				032E331A26505DD600AD5F7D /* PharmacyViewController.swift in Sources */,
+				032E328926504E2100AD5F7D /* AppDelegate.swift in Sources */,
+				032E330626505D2400AD5F7D /* User.swift in Sources */,
+				032E334E26505F6D00AD5F7D /* KeyChainManager.swift in Sources */,
+				032E333126505E7F00AD5F7D /* PharmacyCellViewModel.swift in Sources */,
+				032E333826505EBD00AD5F7D /* PharmacyDetailViewModel.swift in Sources */,
+				032E334726505F6300AD5F7D /* LoginManager.swift in Sources */,
+				032E328B26504E2100AD5F7D /* SceneDelegate.swift in Sources */,
+				032E334F26505F6D00AD5F7D /* SettingsManager.swift in Sources */,
+				032E334126505EE000AD5F7D /* PharmacyDetailViewController.swift in Sources */,
+				032E335E2650616400AD5F7D /* MessageText.swift in Sources */,
+				032E332B26505E3F00AD5F7D /* PharmacyTableViewCell.swift in Sources */,
+				032E331426505DBD00AD5F7D /* PharmacyViewModel.swift in Sources */,
+				032E335026505F6D00AD5F7D /* CryptoManager.swift in Sources */,
+				032E33672650690300AD5F7D /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E329726504E2F00AD5F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E33C52650B05600AD5F7D /* ServiceManagerTest.swift in Sources */,
+				032E33A12650A28E00AD5F7D /* MockHTTPClient.swift in Sources */,
+				032E33B32650AAB400AD5F7D /* PharmacyDetailViewModelTest.swift in Sources */,
+				032E33CF2650B4BE00AD5F7D /* CryptoManagerTest.swift in Sources */,
+				03E2CAF626514CE20048D8ED /* PharmacyVCTest.swift in Sources */,
+				03E2CAF1265143290048D8ED /* LoginVCTest.swift in Sources */,
+				032E33A92650A33700AD5F7D /* LoginViewModelTest.swift in Sources */,
+				032E33B82650ABB700AD5F7D /* PharmacyCellVMTest.swift in Sources */,
+				032E33CA2650B2E700AD5F7D /* LoginManagerTest.swift in Sources */,
+				032E32A026504E2F00AD5F7D /* farmanetTests.swift in Sources */,
+				032E33AE2650A5AF00AD5F7D /* PharmacyViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032E32A226504E2F00AD5F7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032E32AB26504E2F00AD5F7D /* farmanetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032E329D26504E2F00AD5F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032E328426504E2100AD5F7D /* farmanet */;
+			targetProxy = 032E329C26504E2F00AD5F7D /* PBXContainerItemProxy */;
+		};
+		032E32A826504E2F00AD5F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032E328426504E2100AD5F7D /* farmanet */;
+			targetProxy = 032E32A726504E2F00AD5F7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		032E329326504E2F00AD5F7D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032E329426504E2F00AD5F7D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		032E32AD26504E2F00AD5F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032E32AE26504E2F00AD5F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032E32B026504E2F00AD5F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86540B7E4EB862BCBB7FE5AB /* Pods-farmanet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		032E32B126504E2F00AD5F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A889FECF8AB4707A0E53A8 /* Pods-farmanet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		032E32B326504E2F00AD5F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F22CC7F7530F2011FDAE12 /* Pods-farmanetTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/farmanet.app/farmanet";
+			};
+			name = Debug;
+		};
+		032E32B426504E2F00AD5F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 740FEF8E2D1198A7E460F802 /* Pods-farmanetTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/farmanet.app/farmanet";
+			};
+			name = Release;
+		};
+		032E32B626504E2F00AD5F7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC03A52F45711A5807A33805 /* Pods-farmanet-farmanetUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = farmanet;
+			};
+			name = Debug;
+		};
+		032E32B726504E2F00AD5F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24296DA7085004DF81383FA /* Pods-farmanet-farmanetUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CHB639HRZ4;
+				INFOPLIST_FILE = farmanetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.achango.farmanetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = farmanet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032E328026504E2100AD5F7D /* Build configuration list for PBXProject "farmanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032E32AD26504E2F00AD5F7D /* Debug */,
+				032E32AE26504E2F00AD5F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032E32AF26504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032E32B026504E2F00AD5F7D /* Debug */,
+				032E32B126504E2F00AD5F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032E32B226504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032E32B326504E2F00AD5F7D /* Debug */,
+				032E32B426504E2F00AD5F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032E32B526504E2F00AD5F7D /* Build configuration list for PBXNativeTarget "farmanetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032E32B626504E2F00AD5F7D /* Debug */,
+				032E32B726504E2F00AD5F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032E327D26504E2100AD5F7D /* Project object */;
+}

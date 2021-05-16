@@ -1,0 +1,15 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Carthage
+  - Pods
+  - farmanetTests
+  - farmanetUITests
+disabled_rules:
+  - force_cast
+  - trailing_whitespace
+  - variable_name
+  - private_unit_test
+  - weak_delegate
+  - cyclomatic_complexity
+  - force_unwrapping
+  - function_body_length
+line_length: 200

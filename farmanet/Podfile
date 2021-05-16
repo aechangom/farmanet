@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '13.0'
+
+target 'farmanet' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for farmanet
+    pod 'KeychainSwift'
+    pod 'Alamofire', '~> 5.2'
+    pod 'SwiftLint'
+  target 'farmanetTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'farmanetUITests' do
+    # Pods for testing
+  end
+
+end
