@@ -12,7 +12,7 @@
  Usuario = admin
  Contraseña = 12345
  
-- Se puede realizar el usuario y contraseña usando la clase SettingsManager modificando los atributos user, password
+- Se puede modificar el usuario y contraseña usando la clase SettingsManager modificando los atributos user, password
 
 ![Simulator Screen Shot - iPhone 8 - 2021-05-16 at 10 50 31](https://user-images.githubusercontent.com/23081637/118403576-a48a1700-b634-11eb-98af-353542e7bbc5.png)
 
@@ -26,7 +26,7 @@
   -  pod 'Alamofire'
   -  pod 'SwiftLint'
   
-- Reclas de SwiftLint 
+- Reglas de SwiftLint 
 
 excluded: # paths to ignore during linting. 
   - Carthage
